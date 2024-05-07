@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <title>Mehra's Music Player</title>
+    <style>
+        ::-webkit-scrollbar-track
+{
+    background-color: #fff;
+    color: #cdc2d0;
+    background: #cdc2d0;
+}
+::-webkit-scrollbar-thumb
+{
+    background-color: #fff;
+    color: #cdc2d0;
+    background: #cdc2d0;
+}
+::-webkit-scrollbar-thumb:hover
+{
+    background-color:#fff;
+    color: #cdc2d0;
+    background: #cdc2d0;
+}
+    </style>
+</head>
+<body>
+    <h1>Mehra's Music Player</h1>
+    <div class="music-container" id="music-container">
+        <div class="music-info">
+            <h4 class="title" id="title"></h4>
+            <div class="progress-container" id="progress-container">
+                <div class="progress" id="progress"></div>
+            </div>
+           
+    </div>
+    
+        <audio src="" id="audio"></audio>
+        <div class="img-container">
+            <img src="" alt="music-cover" id="cover" />
+        </div>
+        <div class="navigation">
+            <button id="prev" class="action-btn">
+                <i class="fa fa-backward" aria-hidden="true"></i>
+            </button>
+            <button id="play" class="action-btn action-btn-big">
+                <i class="fa fa-play" aria-hidden="true"></i>
+            </button>
+            <button id="next" class="action-btn">
+                <i class="fa fa-forward" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+    <div class="lists-of-songs">
+        <div class="music-list">
+            <input type="text" id="search-bar" placeholder="Search for a song...">
+            <ul id="songs-list">
+                
+                <!-- Dynamically generated song list will be added here -->
+            </ul>
+        </div>
+    </div>
+    <div id="playlist" class="playlist">
+        <h3>Playlist</h3>
+        <ul id="playlist-items"></ul>
+      </div>
+      
+      <div class="songs-list">
+        <ul id="songs-list"></ul>
+      </div>
+      
+      <button type="button" id="add-to-playlist">Add to playlist</button>
+     
+    <script src="script.js"></script>
+</body>
+</html>
+
+
